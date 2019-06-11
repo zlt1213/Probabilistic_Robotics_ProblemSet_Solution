@@ -1,0 +1,147 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\title{ CH3 Gaussian Filter \\  Exercise 3 Solution}
+\author{zlt1213@gmail.com}
+\date{June 2019}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+
+
+
+
+\begin{document}
+
+\maketitle
+
+\section{Problem 1}
+Let $X_t$ denote the state of the car at time $t$. 
+\subsection{Question (a)}
+The state vector should be:
+
+$
+x_t = 
+\begin{pmatrix}
+x \\
+\dot{x}\\
+\end{pmatrix}
+$
+
+
+
+\subsection{Question (b)}
+Goal: State Transition model of $P(x_t | u_t, x_{t-1})$ \\
+Solution:\\ \\
+Let $u_t$ denote operation at time $t$, then \\
+$u_t\sim{N(0, \sigma^2)}$ \\ \\
+Suppose during $\Delta t$, the acceleration is constand, thus\\
+$\ddot{x_t}=u_t$\\
+$\dot{x_t} = \dot{x_{t-1}}+u_{t-1} \Delta t$ \\
+$x_t = x_{t-1}+ \dot{x_{t-1}}\Delta t + u_{t-1}{\Delta t}^2/2$\\
+
+$$
+X_t = 
+\begin{pmatrix}
+1 & \Delta t \\
+0 & 1 
+\end{pmatrix} X_{t-1} + 
+\begin{pmatrix}
+0.5{\Delta t}^2  \\
+\Delta t
+\end{pmatrix} \ddot{x}_{t-1}
+$$\\
+since $u_{t-1}\sim{N(0, \sigma^2)}$, we have $\ddot{x}_{t-1}\sim{N(0, \sigma^2)}$\\
+
+$$A = \begin{pmatrix}
+1 & \Delta t\\
+0 & 1 
+\end{pmatrix}, 
+B = 
+\begin{pmatrix}
+0 \\
+0
+\end{pmatrix}, 
+\epsilon = 
+\begin{pmatrix}
+0.5{\Delta t}^2 u\\
+\Delta t u
+\end{pmatrix}
+$$ where $u\sim{N(0, \sigma^2)}$\\
+as $\Delta t = 1$\\
+$$
+\epsilon = 
+\begin{pmatrix}
+0.5u\\
+u
+\end{pmatrix}
+$$
+so,
+$$
+R = 
+\begin{pmatrix}
+1/4 & 1/2\\
+1/2 & 1
+\end{pmatrix}
+$$\\
+
+
+
+
+\subsection{Question (c)}
+Suppose $$ 
+\Sigma_0 = 
+\begin{pmatrix}
+0&0\\0&0
+\end{pmatrix}
+$$\\ 
+For $t = 1, 2, 3, 4, 5$\\
+$$ 
+\bar{\Sigma}_1 = A\Sigma_0A^{T}+R=\begin{pmatrix}
+0.25 & 0.5 \\
+0.5  & 1.0
+\end{pmatrix}
+$$\\
+$$ 
+\bar{\Sigma}_2 = A\Sigma_1A^{T}+R=\begin{pmatrix}
+2.5 & 2.0 \\
+2.0  & 2.0
+\end{pmatrix}
+$$\\
+$$ 
+\bar{\Sigma}_3 = A\Sigma_2A^{T}+R=\begin{pmatrix}
+8.75 & 4.5 \\
+4.5  & 3.0
+\end{pmatrix}
+$$\\
+$$ 
+\bar{\Sigma}_4 = A\Sigma_3A^{T}+R=\begin{pmatrix}
+21.0 & 8.0 \\
+8.0  & 4.0
+\end{pmatrix}
+$$\\
+$$ 
+\bar{\Sigma}_5 = A\Sigma_4A^{T}+R=\begin{pmatrix}
+41.25 & 12.5 \\
+12.5  & 5.0
+\end{pmatrix}
+$$\\
+
+
+
+\subsection{Question (d)}
+
+This should be a test. 
+
+
+\begin{figure}[h!]
+\centering
+
+
+\caption{The Universe}
+\label{fig:Uncertain}
+\end{figure}
+
+\end{document}
