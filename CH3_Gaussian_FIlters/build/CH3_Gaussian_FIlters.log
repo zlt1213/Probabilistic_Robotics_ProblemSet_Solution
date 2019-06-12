@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.6.2)  11 JUN 2019 10:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.6.2)  12 JUN 2019 11:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -326,7 +326,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--222
 
  []
 
-[4] [5 <./figures/ch3p2.png>] (build/CH3_Gaussian_FIlters.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 226--228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--243
+
+ []
+
+[5 <./figures/ch3p2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
+[6] (build/CH3_Gaussian_FIlters.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -343,17 +378,20 @@ Here is how much of TeX's memory you used:
 12.pfb><f:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmex10.pfb><f:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmmi10.pfb><f:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi7.pfb><f:/Program Files/texlive/2019/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb><f:/Program Files/texlive/2019/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr12.pfb><f:/Program Files/texlive/2019/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr17.pfb><f:/Program Files/texlive/2019/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr7.pfb><f:/Program Files/texlive/2019/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb><f:/Program Files/texlive/2019/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on build/CH3_Gaussian_FIlters.pdf (5 pages, 141189 bytes).
+msfonts/cm/cmmi5.pfb><f:/Program Files/texlive/2019/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi7.pfb><f:/Program Files/texlive/2019/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb><f:/Program Files/texlive/2019/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb><f:/Program Files/texlive/2019/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr17.pfb><f:/Program Files/texlive/2019/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr5.pfb><f:/Program Files/texlive/2019/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr7.pfb><f:/Program Files/texlive/2019/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><f:/Program Files/texlive/2019/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><f:/Program Files/texlive/2
+019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on build/CH3_Gaussian_FIlters.pdf (6 pages, 170602 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

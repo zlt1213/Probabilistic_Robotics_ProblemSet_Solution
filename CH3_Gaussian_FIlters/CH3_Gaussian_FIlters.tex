@@ -220,7 +220,46 @@ $$
 \\
 \\
 \section{Problem 3}
+As know, if $X_t\sim{N(\mu, \sigma^2)}$ the characteristic function of it should be \\
+$$
+C_X(t) = exp(iut - \dfrac{\sigma^2t^2}{2})
+$$
+\\and\\
+$$
+Y = aX + b \Rightarrow C_Y(t)=e^{ibt}C_X(at) 
+$$
+$$
+Z = X + Y \Rightarrow C_Z(t) = C_X(t)C_Y(t)
+$$\\
+For prediction step of KF
+$$
+x_t = Ax_{t-1}+Bu_t + \epsilon_t
+$$ where \\
+$$x_{t-1}\sim{N(\mu_{t-1}, \Sigma_{t-1})}$$
+$$\epsilon_t\sim{N(0, R_t)}$$\\
+so $(Ax_{t-1}+Bu_t)\sim{N(A\mu_{t-1}+Bu_t, A\Sigma_{t-1}A^T)}$ \\and 
+$x_t = (Ax_{t-1}+Bu_t) + \epsilon_t$\\
+thus \\
+$$
+\begin{aligned}
+C_{x_t}(t) &= C_{(Ax_{t-1}+Bu_t)}(t)C_{\epsilon_t}(t) \\
+&=exp<iA\mu_{t-1}+iBu_t, t>exp[-1/2<A\Sigma_{t-1}A^Tt,t>]\\
+&\times exp<0,t>exp[-1/2<R_tt, t>]\\
+&=exp<i(A\mu_{t-1}+Bu_t), t>exp[-1/2<(A\Sigma_{t-1}A^T+R_t)t, t>]
+\end{aligned}\\
+$$ \\transform back to probability space \\
+$$
+x_t\sim{N(A\mu_{t-1}+Bu_t, A\Sigma_{t-1}A^T+R_t)}
+$$ this is \\
+$$
+\bar{bel}(x_t) = A_t\mu_{t-1}+Bu_t
+$$
+$$
+\bar{\Sigma}_t = A\Sigma_{t-1}A^T+R_t
+$$\\
 
+
+\section{Problem 4}
 
 
 
